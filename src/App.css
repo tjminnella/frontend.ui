@@ -1,3 +1,9 @@
+* {
+  font-family: "Secular One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 *,
 *::before,
 *::after {
@@ -13,11 +19,104 @@
   --black: #000;
 }
 
-body {
-  background-color: var(--light-grey);
-}
 footer {
   display: block;
   unicode-bidi: isolate;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: Arial,
+  sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-grey);
+  /*background: linear-gradient(30deg, #ff9999 50%, #6699ff 50%)*/
+}
+
+.form-wrap {
+  background-color: white;
+  width: 400px;
+  padding: 20px;
+  border: 1px solid black;
+  box-shadow: 5px 5px 10px black;
+}
+
+.form-wrap h2,
+.form-wrap p {
+  text-align: center;
+}
+
+.form-wrap p {
+  position: relative;
+  top: -18px;
+}
+
+.section {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.submit-wrap {
+  text-align: center;
+}
+
+.submit-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 0.4rem 0.5rem;
+  border: 1px solid black
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+  background-color: #f3f3f3;
+}
+
+.submit-btn:disabled {
+  cursor: not-allowed;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.status {
+  margin: 10px;
+  font-size: 1.2em;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  font-size: 1.5em;
+  margin: 5px;
+  background: #fff;
+  border: 1px solid #999;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+#reset {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
 }
 

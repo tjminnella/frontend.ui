@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from "react-router";
-import CountdownTimer  from '././components/lessons/countdownTimer.tsx'
+import CountdownTimer  from './components/lessons/countdownTimer.tsx'
 import EventRSVPForm from './components/lessons/eventRsvForm.tsx';
 import { SuperheroForm } from './components/lessons/superHero.tsx';
 import { ShoppingList } from './components/lessons/shoppingApp.tsx';
